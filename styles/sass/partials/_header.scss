@@ -1,45 +1,128 @@
-header {
-    background-image: url(../assets/image3.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    position: relative;
+// header {
+//     background-image: url(../assets/image9.jpeg);
+//     background-position: center;
+//     background-size: cover;
+//     height: 80vh;
+//     position: relative;
     
-    .overlay {
-        height: 100%;
-        width: 100%;
-        background: rgba(255, 255, 255, 0.2);
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-    }
+//     .overlay {
+//         height: 100%;
+//         width: 100%;
+//         background: rgba(255, 254, 254, 0.3);
+//         position: absolute;
+//         top: 0;
+//         bottom: 0;
+//         right: 0;
+//         left: 0;
+//     }
+// }
+
+header {
+    background-color: rgb(15, 5, 83);
+    height: 90vh;
+    // max-width: 1440px;
 }
 
 
 .header-text {
-    text-align: center;
-    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    // text-align: start;
+    // text-align: center;
+    // opacity: 1;
+    color: wheat;
+    // color: black;
 
+    h1 {
+        font-size: 7.5rem;
+        letter-spacing: 2px;
+        line-height: 0.9;
+        font-weight: 700;
+        width: 70%;
+        margin: 40px 0;
+    }
+
+    h2 {
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+        border: none;
+        background-color: rgb(205, 50, 117);
+        color: white;
+        padding: 10px 25px;
+        border-radius: 5px;
+        margin-top: 50px;
+    
+        &:hover,
+        &:focus {
+            background-color: rgb(252, 179, 211);
+            color: rgb(205, 50, 117);
+            cursor: pointer;
+        }
+    }
 }
-h1 {
-    font-size: 150px;
-    letter-spacing: 2px;
-    line-height: 72px;
-    // color: white;
-    font-weight: 700;
-}
+
+
+
 
 nav ul {
+    // z-index: 10; 
     display: flex;
+    justify-content: flex-end;
+
+
     li {
+        z-index: 10;
         list-style: none;
-        margin: 20px;
+        margin: 20px 40px;
     }
     a {
         text-decoration: none;
-        color: black;
+        // color: rgb(232, 225, 230);
+        color: rgb(15, 5, 83);
+        font-weight: 700;
+
+        &:hover,
+        &:focus {
+            color: white;
+            // color: rgb(205, 50, 117);
+            cursor: pointer;
+        }
     }
 }
 
+h1::before {
+    // background-image: url(../assets/.decal-img.jpg);
+    content: "";
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    display: inline-block;
+    background: coral;
+    margin-right: 10px;
+    opacity: 0.6;
+    position: absolute;
+    top: -150px;
+    right: -100px;
+    z-index: 1;
+}
+
+h1::after {
+    content: "";
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    display: inline-block;
+    background: rgb(246, 211, 147);
+    margin-right: 10px;
+    opacity: 0.5;
+    position: absolute;
+    top: -200px;
+    right: 300px;
+    z-index: 1;
+}
