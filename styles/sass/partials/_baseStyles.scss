@@ -27,6 +27,43 @@ h2 {
     padding: 20px;
 }
 
+.project-overview h2,
+.about-me h2 {
+    // color: #12261e;
+    color: #235a37;
+    text-shadow: 3px 3px 3px #DDA15E;
+    padding: 30px 0;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+
+    &::after {
+        content: "";
+        // width: 525px;
+        // height: 10px;
+        background-color: coral;
+        display: inline-block;
+        opacity: 0.7;
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+.project-overview h2::after {
+    width: 525px;
+    height: 10px;
+    left: 35%;
+}
+
+.about-me h2::after {
+    width: 300px;
+    height: 10px;
+    left: 43%;
+}
+
+
+
+
 h3 {
     font-style: italic;
     font-weight: 400;

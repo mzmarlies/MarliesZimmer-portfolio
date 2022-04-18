@@ -1,41 +1,38 @@
+header {
+    background-image: url(../assets/background5.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    
+    .overlay {
+        height: 100%;
+        width: 100%;
+        background: rgba(5, 28, 3, 0.4);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+}
+
 // header {
-//     background-image: url(../assets/image9.jpeg);
+//     // background-color: rgb(15, 5, 83);
+//     background-color: wheat;
+//     height: 100vh;
+//     background-image: url(../assets/background2.jpg);
 //     background-position: center;
 //     background-size: cover;
-//     height: 80vh;
-//     position: relative;
-    
-//     .overlay {
-//         height: 100%;
-//         width: 100%;
-//         background: rgba(255, 254, 254, 0.3);
-//         position: absolute;
-//         top: 0;
-//         bottom: 0;
-//         right: 0;
-//         left: 0;
-//     }
 // }
-
-header {
-    // background-color: rgb(15, 5, 83);
-    background-color: wheat;
-    height: 90vh;
-    // max-width: 1440px;
-}
 
 
 .header-text {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    // text-align: start;
-    // text-align: center;
-    // opacity: 1;
-    // color: wheat;
-    color: rgb(15, 5, 83);
-    // color: black;
+    color: wheat;
 
     h1 {
         font-size: 7.5rem;
@@ -43,8 +40,9 @@ header {
         line-height: 0.9;
         font-weight: 700;
         width: 70%;
-        margin: 10px 0;
-        text-shadow: 1px rgb(205, 50, 117);
+        margin: 50px 0;
+        text-align: center;
+        // text-shadow: 2px 2px 3px #cd3275;
     }
 
     // .last-name {
@@ -54,22 +52,26 @@ header {
     h2 {
         margin-top: 20px;
         padding: 0;
+        text-align: center;
+        // color: rgb(0, 168, 201);
         // align-self: flex-end;
     }
 
     a {
         text-decoration: none;
         border: none;
-        background-color: rgb(205, 50, 117);
-        color: white;
+        // background-color: rgb(205, 50, 117);
+        background-color: coral;
+        color: rgb(46, 11, 26);
         padding: 10px 25px;
         border-radius: 5px;
         margin-top: 50px;
     
         &:hover,
         &:focus {
-            background-color: rgb(252, 179, 211);
-            color: rgb(205, 50, 117);
+            // background-color: rgb(252, 179, 211);
+            background-color: rgb(188, 78, 37);
+            color: white;
             cursor: pointer;
         }
     }
@@ -91,53 +93,51 @@ nav ul {
     }
     a {
         text-decoration: none;
-        // color: rgb(232, 225, 230);
-        // color: wheat;
-        color: rgb(15, 5, 83);
+        color: wheat;
+        // color: rgb(15, 5, 83);
         font-weight: 700;
 
         &:hover,
         &:focus {
-            // color: white;
-            color: rgb(205, 50, 117);
+            color: coral;
             cursor: pointer;
         }
     }
 }
 
-h1::before {
-    // background-image: url(../assets/.decal-img.jpg);
-    content: "";
-    width: 600px;
-    height: 600px;
-    border-radius: 50%;
-    display: inline-block;
-    // background: coral;
-    border: 1px solid coral;
-    margin-right: 10px;
-    opacity: 0.7;
-    position: absolute;
-    top: -150px;
-    right: -50px;
-    z-index: 1;
-}
+// h1::before {
+//     // background-image: url(../assets/.decal-img.jpg);
+//     content: "";
+//     width: 600px;
+//     height: 600px;
+//     border-radius: 50%;
+//     display: inline-block;
+//     // background: coral;
+//     border: 1px solid coral;
+//     margin-right: 10px;
+//     opacity: 0.7;
+//     position: absolute;
+//     top: -150px;
+//     right: -50px;
+//     z-index: 1;
+// }
 
-h1::after {
-    content: "";
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    display: inline-block;
-    // background: rgb(246, 211, 147);
-    // border: 1px solid rgb(246, 211, 147);
-    border: 1px solid rgb(15, 5, 83);
-    margin-right: 10px;
-    opacity: 0.7;
-    position: absolute;
-    top: -200px;
-    right: 200px;
-    z-index: 1;
-}
+// h1::after {
+//     content: "";
+//     width: 400px;
+//     height: 400px;
+//     border-radius: 50%;
+//     display: inline-block;
+//     // background: rgb(246, 211, 147);
+//     // border: 1px solid rgb(246, 211, 147);
+//     border: 1px solid rgb(15, 5, 83);
+//     margin-right: 10px;
+//     opacity: 0.7;
+//     position: absolute;
+//     top: -200px;
+//     right: 200px;
+//     z-index: 1;
+// }
 
 
 // .decal-img {

@@ -258,6 +258,37 @@ h2 {
   padding: 20px;
 }
 
+.project-overview h2,
+.about-me h2 {
+  color: #235a37;
+  text-shadow: 3px 3px 3px #DDA15E;
+  padding: 30px 0;
+  font-weight: 700;
+  position: relative;
+  text-align: center;
+}
+.project-overview h2::after,
+.about-me h2::after {
+  content: "";
+  background-color: coral;
+  display: inline-block;
+  opacity: 0.7;
+  position: absolute;
+  bottom: 0;
+}
+
+.project-overview h2::after {
+  width: 525px;
+  height: 10px;
+  left: 35%;
+}
+
+.about-me h2::after {
+  width: 300px;
+  height: 10px;
+  left: 43%;
+}
+
 h3 {
   font-style: italic;
   font-weight: 400;
@@ -274,8 +305,21 @@ p {
 }
 
 header {
-  background-color: wheat;
-  height: 90vh;
+  background-image: url(../assets/background5.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+header .overlay {
+  height: 100%;
+  width: 100%;
+  background: rgba(5, 28, 3, 0.4);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 
 .header-text {
@@ -286,13 +330,13 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: rgb(15, 5, 83);
+  color: wheat;
 }
 .header-text h1 {
   font-size: 7.5rem;
@@ -300,25 +344,26 @@ header {
   line-height: 0.9;
   font-weight: 700;
   width: 70%;
-  margin: 10px 0;
-  text-shadow: 1px rgb(205, 50, 117);
+  margin: 50px 0;
+  text-align: center;
 }
 .header-text h2 {
   margin-top: 20px;
   padding: 0;
+  text-align: center;
 }
 .header-text a {
   text-decoration: none;
   border: none;
-  background-color: rgb(205, 50, 117);
-  color: white;
+  background-color: coral;
+  color: rgb(46, 11, 26);
   padding: 10px 25px;
   border-radius: 5px;
   margin-top: 50px;
 }
 .header-text a:hover, .header-text a:focus {
-  background-color: rgb(252, 179, 211);
-  color: rgb(205, 50, 117);
+  background-color: rgb(188, 78, 37);
+  color: white;
   cursor: pointer;
 }
 
@@ -337,46 +382,16 @@ nav ul li {
 }
 nav ul a {
   text-decoration: none;
-  color: rgb(15, 5, 83);
+  color: wheat;
   font-weight: 700;
 }
 nav ul a:hover, nav ul a:focus {
-  color: rgb(205, 50, 117);
+  color: coral;
   cursor: pointer;
 }
 
-h1::before {
-  content: "";
-  width: 600px;
-  height: 600px;
-  border-radius: 50%;
-  display: inline-block;
-  border: 1px solid coral;
-  margin-right: 10px;
-  opacity: 0.7;
-  position: absolute;
-  top: -150px;
-  right: -50px;
-  z-index: 1;
-}
-
-h1::after {
-  content: "";
-  width: 400px;
-  height: 400px;
-  border-radius: 50%;
-  display: inline-block;
-  border: 1px solid rgb(15, 5, 83);
-  margin-right: 10px;
-  opacity: 0.7;
-  position: absolute;
-  top: -200px;
-  right: 200px;
-  z-index: 1;
-}
-
 .project-overview {
-  background-color: hsl(248deg, 89%, 17%);
+  background-color: wheat;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -394,11 +409,6 @@ h1::after {
   padding-bottom: 50px;
   text-align: center;
 }
-.project-overview h2 {
-  color: wheat;
-  margin: 30px 0;
-  font-weight: 400;
-}
 .project-overview .overview-images {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -409,7 +419,7 @@ h1::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 50px;
+  padding: 50px 0;
 }
 .project-overview .overview-images .thumbnail {
   height: 350px;
@@ -418,10 +428,10 @@ h1::after {
   border-radius: 10px;
 }
 .project-overview .overview-images .thumbnail img {
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .project-overview .overview-images .thumbnail .thumbnail-overlay {
-  background-color: rgba(27, 11, 130, 0.8);
+  background-color: rgba(188, 78, 37, 0.9);
   height: 100%;
   width: 100%;
   top: 0;
@@ -450,32 +460,46 @@ h1::after {
 }
 .project-overview .overview-images .thumbnail .thumbnail-overlay:hover, .project-overview .overview-images .thumbnail .thumbnail-overlay:focus {
   opacity: 1;
-  -webkit-box-shadow: 2px 2px 10px white, -2px -2px 10px white;
-          box-shadow: 2px 2px 10px white, -2px -2px 10px white;
+  -webkit-box-shadow: 5px 5px 10px white, -5px -5px 10px white;
+          box-shadow: 5px 5px 10px white, -5px -5px 10px white;
   border: none;
 }
 .project-overview .overview-images .thumbnail .thumbnail-overlay p {
   opacity: 1;
-  color: white;
+  color: black;
   font-size: 2rem;
   margin: 0;
   padding: 5px;
+  font-weight: 700;
+  text-shadow: 0.5px 0.5px 1px wheat;
 }
 .project-overview .overview-images .thumbnail .thumbnail-overlay p:last-of-type {
   font-size: 1rem;
 }
 
 .projects {
+  background-color: #0c341e;
+  padding-bottom: 150px;
+}
+.projects h2 {
+  color: coral;
+  padding-top: 100px;
+  font-weight: 700;
+  position: relative;
+  text-align: center;
+}
+.projects h2::after {
+  content: "";
+  width: 425px;
+  height: 10px;
   background-color: wheat;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 40%;
 }
-
-.project-img {
-  height: auto;
-  width: 30%;
-}
-
-.project-text {
-  width: 50%;
+.projects p {
+  font-size: 1.5rem;
 }
 
 .project-content {
@@ -488,4 +512,48 @@ h1::after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 50px;
+  border: 2px solid coral;
+  background-color: #0e542e;
+}
+
+.project-img {
+  height: auto;
+  width: 30%;
+}
+
+.project-text {
+  width: 50%;
+  padding: 50px;
+  color: wheat;
+}
+.project-text h3 {
+  font-weight: 400;
+  font-size: 2.2rem;
+  color: coral;
+}
+
+.about-me {
+  background-color: wheat;
+}
+.about-me .about-text {
+  padding: 50px;
+}
+.about-me p {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 10px 0;
+}
+
+footer {
+  background-color: coral;
+}
+footer p {
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+  color: black;
 }

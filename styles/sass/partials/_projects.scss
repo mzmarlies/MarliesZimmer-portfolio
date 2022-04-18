@@ -1,6 +1,8 @@
 .project-overview {
     // background-color: wheat;
-    background-color: hsl(248, 89%, 17%);
+    // background-color: hsl(248, 89%, 17%);
+    // background-color: #12251d;
+    background-color: wheat;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -9,17 +11,34 @@
     padding-bottom: 50px;
     text-align: center;
 
-    h2 {
-        color: wheat;
-        margin: 30px 0;
-        font-weight: 400;
-    }
+    // h2 {
+    //     // color: #12261e;
+    //     color: #235a37;
+    //     text-shadow: 3px 3px 3px #DDA15E;
+    //     margin: 30px 0;
+    //     font-weight: 700;
+    //     position: relative;
+
+    //     &::after {
+    //         content: "";
+    //         width: 525px;
+    //         height: 10px;
+    //         background-color: coral;
+    //         display: inline-block;
+    //         opacity: 0.7;
+    //         position: absolute;
+    //         bottom: 0;
+    //         left: 35%;
+    //         // z-index: 1;
+    //     }
+    // }
 
     .overview-images {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-bottom: 50px;
+        // padding-bottom: 50px;
+        padding: 50px 0;
 
         .thumbnail {
             // margin: 20px;
@@ -30,13 +49,16 @@
             border-radius: 10px;
             
             img {
-                border-radius: 5px;
+                border-radius: 10px;
             }
 
             
 
         .thumbnail-overlay {
-                background-color: rgba(27, 11, 130, 0.8);
+                // background-color: rgba(27, 11, 130, 0.8);
+                // background-color: rgba(25, 59, 35, 0.8);
+                background-color: rgb(188, 78, 37, 0.9);
+                // background-color: hsla(16, 100%, 66%, 90%);
                 height: 100%;
                 width: 100%;
                 top: 0;
@@ -57,18 +79,19 @@
                 &:hover,
                 &:focus {
                     opacity: 1;
-                    box-shadow: 2px 2px 10px white,
-                    -2px -2px 10px white;
+                    box-shadow: 5px 5px 10px white,
+                    -5px -5px 10px white;
                     border: none;
-                    // transition: ease-in;
                 }
 
                 p {
                     opacity: 1;
-                    color: white;
+                    color: black;
                     font-size: 2rem;
                     margin: 0;
                     padding: 5px;
+                    font-weight: 700;
+                    text-shadow: 0.5px 0.5px 1px wheat;
                 }
 
                 & p:last-of-type {
@@ -81,8 +104,54 @@
 
 
 .projects {
-    background-color: wheat;
+    // background: #FEFAE0;
+    // background: linear-gradient(#0c341e, #2e995e);
+    background-color: #0c341e;
+    padding-bottom: 150px;
+    // background-image: url(../assets/projects-background.jpg);
+    // background-position: center;
+    // background-size: cover;
+    // height: 100vh;
+
+    h2 {
+        color: coral;
+        // text-shadow: 3px 3px 3px black;
+        padding-top: 100px;
+        font-weight: 700;
+        position: relative;
+        text-align: center;
+
+        &::after {
+        content: "";
+            width: 425px;
+            height: 10px;
+            background-color: wheat;
+            display: inline-block;
+            // opacity: 0.7;
+            position: absolute;
+            bottom: 0;
+            left: 40%;
+        }
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
 }
+
+
+.project-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    border: 2px solid coral;
+    background-color: #0e542e;
+}
+
+// .project-content div:first-child {
+//     margin-top: 50px;
+// }
 
 
 .project-img {
@@ -93,11 +162,16 @@
 
 .project-text {
     width: 50%;
+    padding: 50px;
+    color: wheat;
+
+    h3 {
+        font-weight: 400;
+        font-size: 2.2rem;
+        color: coral;
+    }
 }
 
 
-.project-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
+
