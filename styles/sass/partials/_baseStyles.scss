@@ -90,6 +90,33 @@ p {
 
 .wrapper {
     max-width: 1440px;
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
+}
+
+
+nav ul {
+    // z-index: 10; 
+    display: flex;
+    justify-content: flex-end;
+
+
+    li {
+        z-index: 10;
+        list-style: none;
+        margin: 20px 40px;
+    }
+
+    a {
+        text-decoration: none;
+        color: wheat;
+        // color: rgb(15, 5, 83);
+        font-weight: 700;
+
+        &:hover,
+        &:focus {
+            color: coral;
+            cursor: pointer;
+        }
+    }
 }

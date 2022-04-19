@@ -1,5 +1,5 @@
 header {
-    background-image: url(../assets/background5.jpg);
+    background-image: url(../assets/background.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -26,22 +26,28 @@ header {
 //     background-size: cover;
 // }
 
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .header-text {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     color: wheat;
+    width: 65%;
 
     h1 {
         font-size: 7.5rem;
         letter-spacing: 2px;
         line-height: 0.9;
         font-weight: 700;
-        width: 70%;
+        // width: 30%;
         margin: 50px 0;
-        text-align: center;
+        // text-align: center;
         // text-shadow: 2px 2px 3px #cd3275;
     }
 
@@ -50,9 +56,9 @@ header {
     // }
 
     h2 {
-        margin-top: 20px;
+        // margin-top: 20px;
         padding: 0;
-        text-align: center;
+        // text-align: center;
         // color: rgb(0, 168, 201);
         // align-self: flex-end;
     }
@@ -78,32 +84,21 @@ header {
 }
 
 
+.portrait {
+    height: fit-content;
+    max-width: 33%;
+    object-fit: cover;
+    margin-bottom: 50px;
+    
+    img {
+        border: 11px solid wheat;
+        border-radius: 50%;
 
-
-nav ul {
-    // z-index: 10; 
-    display: flex;
-    justify-content: flex-end;
-
-
-    li {
-        z-index: 10;
-        list-style: none;
-        margin: 20px 40px;
-    }
-    a {
-        text-decoration: none;
-        color: wheat;
-        // color: rgb(15, 5, 83);
-        font-weight: 700;
-
-        &:hover,
-        &:focus {
-            color: coral;
-            cursor: pointer;
-        }
     }
 }
+
+
+
 
 // h1::before {
 //     // background-image: url(../assets/.decal-img.jpg);
