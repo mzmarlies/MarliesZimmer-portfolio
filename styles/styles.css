@@ -392,7 +392,6 @@ nav ul a:hover, nav ul a:focus {
 
 .project-overview {
   background-color: wheat;
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -419,15 +418,20 @@ nav ul a:hover, nav ul a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 50px 0;
 }
 .project-overview .overview-images .thumbnail {
+  margin: 20px;
   height: 350px;
   width: 350px;
   position: relative;
   border-radius: 10px;
 }
 .project-overview .overview-images .thumbnail img {
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 10px;
 }
 .project-overview .overview-images .thumbnail .thumbnail-overlay {
@@ -483,6 +487,7 @@ nav ul a:hover, nav ul a:focus {
 }
 .projects h2 {
   color: coral;
+  text-shadow: 3px 3px 3px black;
   padding-top: 100px;
   font-weight: 700;
   position: relative;
@@ -494,6 +499,7 @@ nav ul a:hover, nav ul a:focus {
   height: 10px;
   background-color: wheat;
   display: inline-block;
+  opacity: 1;
   position: absolute;
   bottom: 0;
   left: 40%;
@@ -506,31 +512,51 @@ nav ul a:hover, nav ul a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px;
+  margin: 100px 0;
   border: 2px solid coral;
   background-color: #0e542e;
 }
+.project-content .project-img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 
 .project-img {
-  height: auto;
-  width: 30%;
+  width: calc(33.3333333333% - 13.3333333333px);
+  margin: 0 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .project-text {
-  width: 50%;
-  padding: 50px;
   color: wheat;
 }
 .project-text h3 {
-  font-weight: 400;
+  font-weight: 700;
   font-size: 2.2rem;
   color: coral;
+}
+.project-text .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 10px;
+}
+.project-text .links a {
+  text-decoration: none;
+  color: coral;
+  font-style: italic;
+  padding: 5px;
 }
 
 .about-me {
