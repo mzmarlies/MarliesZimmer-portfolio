@@ -259,7 +259,8 @@ h2 {
 }
 
 .project-overview h2,
-.about-me h2 {
+.about-me h2,
+.contact-h2 {
   color: #235a37;
   text-shadow: 3px 3px 3px #DDA15E;
   padding: 30px 0;
@@ -268,13 +269,14 @@ h2 {
   text-align: center;
 }
 .project-overview h2::after,
-.about-me h2::after {
+.about-me h2::after,
+.contact-h2::after {
   content: "";
   background-color: coral;
   display: inline-block;
   opacity: 0.7;
   position: absolute;
-  bottom: 0;
+  bottom: 8px;
 }
 
 .project-overview h2::after {
@@ -287,6 +289,12 @@ h2 {
   width: 300px;
   height: 10px;
   left: 43%;
+}
+
+.contact-h2::after {
+  width: 360px;
+  height: 10px;
+  left: 40%;
 }
 
 h3 {
@@ -320,7 +328,7 @@ nav ul li {
 nav ul a {
   text-decoration: none;
   color: wheat;
-  font-weight: 700;
+  font-weight: 400;
 }
 nav ul a:hover, nav ul a:focus {
   color: coral;
@@ -507,8 +515,7 @@ header .overlay {
 }
 
 .projects {
-  background-color: #0c341e;
-  padding-bottom: 150px;
+  background-color: #052011;
 }
 .projects h2 {
   color: coral;
@@ -543,8 +550,8 @@ header .overlay {
           flex-direction: column;
   padding: 50px;
   margin: 100px 0;
-  border: 2px solid #53713F;
-  background-color: #0e542e;
+  border: 10px solid #53713F;
+  background-color: #0c341e;
 }
 .project-content .project-img-container {
   display: -webkit-box;
@@ -574,6 +581,7 @@ header .overlay {
   font-weight: 700;
   font-size: 2.2rem;
   color: coral;
+  text-shadow: 1px 1px black;
 }
 .project-text .links {
   display: -webkit-box;
@@ -655,4 +663,59 @@ footer p {
 footer a {
   text-decoration: none;
   color: black;
+}
+
+@media (max-width: 1175px) {
+  .header-text h1 {
+    font-size: 6.5rem;
+  }
+}
+@media (max-width: 980px) {
+  .header-text h1 {
+    font-size: 5.5rem;
+  }
+  .header-text h2 {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 830px) {
+  .header-text h1 {
+    font-size: 5rem;
+  }
+  .header-text h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    height: 140vh;
+  }
+
+  .header-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header-content .portrait {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    max-width: 60%;
+  }
+
+  .header-text {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .header-text a {
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin: 20px 0;
+  }
 }
