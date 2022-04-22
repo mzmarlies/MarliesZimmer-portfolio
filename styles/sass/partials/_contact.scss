@@ -1,7 +1,58 @@
 .contact {
     height: 100vh;
     background-color: wheat;
-    // background-image: url(../assets/background7.jpg);
-    // background-position: center;
-    // background-size: cover;
+
+    .contact-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            color: #052011;
+            font-size: 1.3rem;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 55%;
+        
+        input,
+        label, 
+        textarea {
+            border: none;
+            margin: 10px;
+            padding: 10px;
+            background-color: #5f7050;
+            color: #fbedd5;
+            border-radius: 5px;
+            font-family: 'Montserrat',
+            sans-serif;;
+
+            &::placeholder {
+                color: #ffefd1;
+                opacity: 1;
+
+                // &:focus,
+                // &:hover {
+                //     color: white;
+                // }
+
+            }
+
+            &:focus,
+            &:hover {
+                background-color: #3b4d3a;
+            }
+        }
+    
+
+        .submit {
+            width: 30%;
+            margin: 0 auto;
+            font-family: 'Montserrat',
+            sans-serif;
+        }
+    }
 }

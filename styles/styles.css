@@ -247,7 +247,8 @@ img {
 h1,
 h2,
 h3,
-a {
+a,
+form {
   font-family: "Montserrat", sans-serif;
   margin: 0;
 }
@@ -274,7 +275,7 @@ h2 {
   content: "";
   background-color: coral;
   display: inline-block;
-  opacity: 0.7;
+  opacity: 1;
   position: absolute;
   bottom: 8px;
 }
@@ -344,6 +345,24 @@ nav ul a:hover, nav ul a:focus {
   cursor: pointer;
 }
 
+.header-text a,
+.submit {
+  text-decoration: none;
+  border: none;
+  background-color: coral;
+  color: rgb(46, 11, 26);
+  padding: 10px 25px;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+.header-text a:hover, .header-text a:focus,
+.submit:hover,
+.submit:focus {
+  background-color: rgb(188, 78, 37);
+  color: white;
+  cursor: pointer;
+}
+
 header {
   background-image: url(../assets/background.jpg);
   background-position: center;
@@ -400,20 +419,6 @@ header .overlay {
 }
 .header-text h2 {
   padding: 0;
-}
-.header-text a {
-  text-decoration: none;
-  border: none;
-  background-color: coral;
-  color: rgb(46, 11, 26);
-  padding: 10px 25px;
-  border-radius: 5px;
-  margin-top: 50px;
-}
-.header-text a:hover, .header-text a:focus {
-  background-color: rgb(188, 78, 37);
-  color: white;
-  cursor: pointer;
 }
 
 .portrait {
@@ -669,6 +674,77 @@ header .overlay {
 .contact {
   height: 100vh;
   background-color: wheat;
+}
+.contact .contact-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact .contact-content p {
+  color: #052011;
+  font-size: 1.3rem;
+}
+.contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 55%;
+}
+.contact form input,
+.contact form label,
+.contact form textarea {
+  border: none;
+  margin: 10px;
+  padding: 10px;
+  background-color: #5f7050;
+  color: #fbedd5;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+}
+.contact form input::-webkit-input-placeholder, .contact form label::-webkit-input-placeholder, .contact form textarea::-webkit-input-placeholder {
+  color: #ffefd1;
+  opacity: 1;
+}
+.contact form input::-moz-placeholder, .contact form label::-moz-placeholder, .contact form textarea::-moz-placeholder {
+  color: #ffefd1;
+  opacity: 1;
+}
+.contact form input:-ms-input-placeholder, .contact form label:-ms-input-placeholder, .contact form textarea:-ms-input-placeholder {
+  color: #ffefd1;
+  opacity: 1;
+}
+.contact form input::-ms-input-placeholder, .contact form label::-ms-input-placeholder, .contact form textarea::-ms-input-placeholder {
+  color: #ffefd1;
+  opacity: 1;
+}
+.contact form input::placeholder,
+.contact form label::placeholder,
+.contact form textarea::placeholder {
+  color: #ffefd1;
+  opacity: 1;
+}
+.contact form input:focus, .contact form input:hover,
+.contact form label:focus,
+.contact form label:hover,
+.contact form textarea:focus,
+.contact form textarea:hover {
+  background-color: #3b4d3a;
+}
+.contact form .submit {
+  width: 30%;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
 }
 
 footer {
