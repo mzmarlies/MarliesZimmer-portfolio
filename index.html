@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Mulish&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="https://kit.fontawesome.com/6db1069ed1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <title>Marlies Claire Portfolio</title>
 </head>
 
@@ -24,8 +25,8 @@
                 <nav>
                     <ul>
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#project-overview">Projects</a></li>
                         <li><a href="#about">About</a></li>
+                        <li><a href="#project-overview">Projects</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
@@ -49,69 +50,130 @@
 
     <main>
 
+        <section class="about-me" id="about">
+            <div class="wrapper">
+                <h2>about me.</h2>
+                <div class="about-text">
+                    <p>
+                        I am a front-end web developer with a background in making animal simulation models for veterinary schools. This experience honed my abilities to think critically, analyze complex problems, work efficiently under pressure, and work well independently as well as with a team.
+                    </p>
+                    <p>
+                        I have experience writing clean, accessible code using HTML5, CSS3, JavaScipt and React. I enjoy working on both paired and solo projects. I love meeting new people and I bring a positive, determined, and calm energy to all the work that I do.
+                    </p>
+                    <p>
+                        My favourite things to do in my spare time are rock climbing and bouldering. I also enjoy playing music (piano, guitar, and the harp when I'm able to rent one, learning French and Spanish, and painting with acrylics.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills">
+            <div class="wrapper">
+                <h2>My Toolkit</h2>
+                <ul class="toolkit-icons">
+                    <li>
+                        <i class="fa-brands fa-html5" aria-hidden="true" title="HTML5"></i>
+                        <span class="sr-only">HTML5</span>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-css3"aria-hidden="true" title="CSS3"></i>
+                        <span class="sr-only">CSS3</span>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-js" aria-hidden="true" title="JavaScipt"></i>
+                        <span class="sr-only">JavaScipt</span>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-react" aria-hidden="true" title="React"></i>
+                        <span class="sr-only">React</span>
+                    </li>
+                    <li>
+                        <i class="devicon-firebase-plain" aria-hidden="true" title="Firebase"></i>
+                        <span class="sr-only">Firebase</span>
+                    </li>
+                    <li>
+                        <i class="devicon-git-plain" aria-hidden="true" title="Git"></i>
+                        <span class="sr-only">Git</span>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-sass" aria-hidden="true" title="SASS"></i>
+                        <span class="sr-only">Sass</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
         <div id="project-overview"  class="project-overview">
             <div class="wrapper">
     
                 <h2>projects overview.</h2>
 
-                <div class="overview-images">
-
-                    <div class="thumbnail">
-                        <img src="./assets/under-the-sea3.jpeg" alt="thumbnail of project title page with sea creatures on it">
-                        <a href="#project-1" title="Click for to see project">
-                            <div class="thumbnail-overlay">
-                                <p>PSD Conversion</p>
-                                <p>(HTML5, CSS3, SASS)</p>
-                            </div>
-                        </a>
-                    </div>
-                    
-
-                    
-                    <div class="thumbnail">
-                        <img src="./assets/dog-discovery.jpeg" alt="thumbnail of project title page with sea creatures on it">
-                        <a href="#project-2" title="Click for to see project">
-                            <div class="thumbnail-overlay">
-                                <p>Javascript API Integration</p>
-                                <p>(HTML5, CSS3, SASS, JavaSript)</p>
-                            </div>
-                        </a>
-                    </div>
-
-
-                    <div class="thumbnail">
-                        <img src="./assets/paint-gallery.jpeg" alt="thumbnail of project placeholder">
-                        <a href="#project-3" title="Click for to see project">
-                            <div class="thumbnail-overlay">
-                                <p>Lorem, ipsum dolor.</p>
-                                <p>( LORM, IPSM , DOLOR. )</p>
-                            </div>
-                        </a>
-                    </div>
-
-
-                    <div class="thumbnail">
-                        <img src="./assets/brushes.jpeg" alt="thumbnail of project placeholder">
-                        <a href="#project-3" title="Click for to see project">
-                            <div class="thumbnail-overlay">
-                                <p>Lorem, ipsum dolor.</p>
-                                <p>( LORM, IPSM , DOLOR. )</p>
-                            </div>
-                        </a>
-                    </div>
-
-
-                    <div class="thumbnail">
-                        <img src="./assets/contact.jpeg" alt="thumbnail of project placeholder">
-                        <a href="#project-3" title="Click for to see project">
-                            <div class="thumbnail-overlay">
-                                <p>Lorem, ipsum dolor.</p>
-                                <p>( LORM, IPSM , DOLOR. )</p>
-                            </div>
-                        </a>
-                    </div>
+                <div class="carousel">
+                    <div class="overview-images">
     
-            </div>
+                        <div class="thumbnail carousel-item carousel-item-selected">
+                            <img src="./assets/under-the-sea3.jpeg" alt="thumbnail of project title page with sea creatures on it">
+                            <a href="#project-1" title="Click for to see project">
+                                <div class="thumbnail-overlay">
+                                    <p>PSD Conversion</p>
+                                    <p>(HTML5, CSS3, SASS)</p>
+                                </div>
+                            </a>
+                        </div>
+                        
+    
+                        
+                        <div class="thumbnail .carousel-item">
+                            <img src="./assets/dog-discovery.jpeg" alt="thumbnail of project title page with sea creatures on it">
+                            <a href="#project-2" title="Click for to see project">
+                                <div class="thumbnail-overlay">
+                                    <p>Javascript API Integration</p>
+                                    <p>(HTML5, CSS3, SASS, JavaSript)</p>
+                                </div>
+                            </a>
+                        </div>
+    
+    
+                        <div class="thumbnail .carousel-item">
+                            <img src="./assets/paint-gallery.jpeg" alt="thumbnail of project placeholder">
+                            <a href="#project-3" title="Click for to see project">
+                                <div class="thumbnail-overlay">
+                                    <p>Lorem, ipsum dolor.</p>
+                                    <p>( LORM, IPSM , DOLOR. )</p>
+                                </div>
+                            </a>
+                        </div>
+    
+    
+                        <div class="thumbnail .carousel-item">
+                            <img src="./assets/brushes.jpeg" alt="thumbnail of project placeholder">
+                            <a href="#project-3" title="Click for to see project">
+                                <div class="thumbnail-overlay">
+                                    <p>Lorem, ipsum dolor.</p>
+                                    <p>( LORM, IPSM , DOLOR. )</p>
+                                </div>
+                            </a>
+                        </div>
+    
+    
+                        <div class="thumbnail .carousel-item">
+                            <img src="./assets/contact.jpeg" alt="thumbnail of project placeholder">
+                            <a href="#project-3" title="Click for to see project">
+                                <div class="thumbnail-overlay">
+                                    <p>Lorem, ipsum dolor.</p>
+                                    <p>( LORM, IPSM , DOLOR. )</p>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- <div class="carousel-nav">
+                            <span class="carousel-button"></span>
+                            <span class="carousel-button"></span>
+                            <span class="carousel-button"></span>
+                        </div> -->
+        
+                    </div> <!-- end of the images container -->
+                    
+                </div> <!-- end of the carousel -->
 
 
         </div>
@@ -201,30 +263,24 @@
 
                     </div>
 
-                    
-                    
-
             </div> <!-- end of wrapper -->   
         
         </div> <!-- end of project section -->
     </main>
 
-    <section class="about-me" id="about">
+
+
+    <section class="contact" id="contact">
         <div class="wrapper">
-            <h2>about me.</h2>
-            <div class="about-text">
-                <p>
-                    I am a front-end web developer with a background in making animal simulation models for veterinary schools. This experience honed my abilities to think critically, analyze complex problems, work efficiently under pressure, and work well independently as well as with a team.
-                </p>
-                <p>
-                    I have experience writing clean, accessible code using HTML5, CSS3, JavaScipt and React. I enjoy working on both paired and solo projects. I love meeting new people and I bring a positive, determined, and calm energy to all the work that I do. 
-                </p>
-                <p>
-                    My favourite things to do in my spare time are rock climbing and bouldering. I also enjoy playing music (piano, guitar, and the harp when I'm able to rent one), learning French and Spanish, and painting with acrylics. 
-                </p>
-            </div>
+            <h2 class="contact-h2">Get In Touch</h2>
+
+            <!-- <form action="">
+                <label for=""></label>
+                <input type="text" name="" id="">
+            </form> -->
         </div>
     </section>
+
 
     <section class="socials">
         <div class="wrapper">
@@ -233,7 +289,7 @@
                 <ul>
                     <li>
                         <a href="https://www.linkedin.com/in/marlies-zimmer/" title="Find me on LinkedIn">
-                            <i class="fa-brands fa-linkedin social-links" aria-hidden="true"></i> 
+                            <i class="fa-brands fa-linkedin social-links" aria-hidden="true"></i>
                             <span class="sr-only">Link to LinkedIn Page</span>
                         </a>
                     </li>
@@ -260,23 +316,20 @@
         </div>
     </section>
 
-    <section class="contact" id="contact">
+    <!-- <section class="thank-you">
         <div class="wrapper">
-            <h2 class="contact-h2">Get In Touch</h2>
-
-            <!-- <form action="">
-                <label for=""></label>
-                <input type="text" name="" id="">
-            </form> -->
+            <h3>Thank you for checking out my page!</h3>
         </div>
-    </section>
+    </section> -->
 
 
 
-<footer>
-    <p><a href="https://www.flaticon.com/free-icons/hexagon" title="hexagon icons">Hexagon icons created by Pixel perfect -
-        Flaticon</a></p>
-</footer>
+    <footer>
+        <p><a href="https://www.flaticon.com/free-icons/hexagon" title="hexagon icons">Hexagon icons created by Pixel perfect -
+            Flaticon</a></p>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
 </body>
 
 </html>

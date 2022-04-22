@@ -302,6 +302,15 @@ h3 {
   font-weight: 400;
 }
 
+.skills h2,
+.projects h3 {
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: coral;
+  text-shadow: 1px 1px black;
+  text-align: center;
+}
+
 p {
   font-family: "Mulish", sans-serif;
 }
@@ -517,26 +526,8 @@ header .overlay {
 .projects {
   background-color: #052011;
 }
-.projects h2 {
-  color: coral;
-  text-shadow: 3px 3px 3px black;
-  padding-top: 100px;
-  font-weight: 700;
-  position: relative;
-  text-align: center;
-}
-.projects h2::after {
-  content: "";
-  width: 425px;
-  height: 10px;
-  background-color: wheat;
-  display: inline-block;
-  opacity: 1;
-  position: absolute;
-  bottom: 0;
-  left: 40%;
-}
-.projects p {
+
+p {
   font-size: 1.5rem;
 }
 
@@ -577,12 +568,6 @@ header .overlay {
 .project-text {
   color: wheat;
 }
-.project-text h3 {
-  font-weight: 700;
-  font-size: 2.2rem;
-  color: coral;
-  text-shadow: 1px 1px black;
-}
 .project-text .links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -600,6 +585,36 @@ header .overlay {
   padding: 5px;
 }
 
+.carousel {
+  position: relative;
+}
+.carousel .carousel-item {
+  height: 300px;
+  display: none;
+}
+.carousel .carousel-item-selected {
+  display: block;
+  border: 3px solid red;
+}
+.carousel .carousel-nav {
+  width: 100%;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0%;
+  background-color: red;
+  text-align: center;
+}
+.carousel .carousel-button {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
 .about-me {
   background-color: wheat;
 }
@@ -612,8 +627,65 @@ header .overlay {
   padding: 10px 0;
 }
 
+.skills {
+  background-color: #0c341e;
+  height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.skills h2 {
+  margin: 10px;
+}
+.skills .toolkit-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+}
+.skills .toolkit-icons li {
+  list-style: none;
+  color: wheat;
+  font-size: 3.5rem;
+  margin: 10px 40px;
+  z-index: 10;
+}
+.skills .toolkit-icons li i:hover,
+.skills .toolkit-icons li i:focus {
+  color: #ffffff;
+}
+.skills .toolkit-icons .fa-html5 {
+  color: #f16529;
+}
+.skills .toolkit-icons .fa-css3 {
+  color: #2862e9;
+}
+.skills .toolkit-icons .fa-js {
+  color: #e9d44d;
+}
+.skills .toolkit-icons .fa-react {
+  color: #5ed3f3;
+}
+.skills .toolkit-icons .devicon-firebase-plain {
+  color: #f7a213;
+}
+.skills .toolkit-icons .devicon-git-plain {
+  color: #e94e31;
+}
+.skills .toolkit-icons .fa-sass {
+  color: #c36192;
+}
+
 .socials {
-  height: 45vh;
+  height: 50vh;
   background-image: url(../assets/background.jpg);
   background-position: center;
   background-size: cover;
@@ -656,6 +728,7 @@ footer {
   background-color: coral;
 }
 footer p {
+  font-size: 1rem;
   margin: 0;
   padding: 10px 0;
   text-align: center;
