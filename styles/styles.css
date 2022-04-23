@@ -273,6 +273,7 @@ h2 {
 .about-me h2::after,
 .contact-h2::after {
   content: "";
+  height: 10px;
   background-color: coral;
   display: inline-block;
   opacity: 1;
@@ -282,19 +283,16 @@ h2 {
 
 .project-overview h2::after {
   width: 525px;
-  height: 10px;
   left: 35%;
 }
 
 .about-me h2::after {
   width: 300px;
-  height: 10px;
   left: 43%;
 }
 
 .contact-h2::after {
   width: 360px;
-  height: 10px;
   left: 40%;
 }
 
@@ -353,7 +351,7 @@ nav ul a:hover, nav ul a:focus {
   color: rgb(46, 11, 26);
   padding: 10px 25px;
   border-radius: 5px;
-  margin-top: 50px;
+  margin: 50px 0;
 }
 .header-text a:hover, .header-text a:focus,
 .submit:hover,
@@ -367,7 +365,7 @@ header {
   background-image: url(../assets/background.jpg);
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 110vh;
   position: relative;
 }
 header .overlay {
@@ -450,6 +448,8 @@ header .overlay {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-bottom: 50px;
   text-align: center;
 }
@@ -457,19 +457,19 @@ header .overlay {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 50px 0;
+  padding: 25px 0;
 }
 .project-overview .overview-images .thumbnail {
   margin: 20px;
-  width: calc(20% - 40px);
+  width: 200px;
   border-radius: 10px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -481,7 +481,7 @@ header .overlay {
      object-fit: contain;
 }
 .project-overview .overview-images .thumbnail .thumbnail-overlay {
-  background-color: rgba(188, 78, 37, 0.9);
+  background-color: hsla(16deg, 100%, 66%, 0.85);
   height: 100%;
   width: 100%;
   bottom: 0;
@@ -505,8 +505,8 @@ header .overlay {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   border-radius: 10px;
-  -webkit-box-shadow: 5px 5px 10px rgba(105, 32, 6, 0.9), -5px -5px 10px rgba(105, 32, 6, 0.9);
-          box-shadow: 5px 5px 10px rgba(105, 32, 6, 0.9), -5px -5px 10px rgba(105, 32, 6, 0.9);
+  -webkit-box-shadow: 5px 5px 10px rgb(223, 172, 76), -5px -5px 10px rgb(223, 172, 76);
+          box-shadow: 5px 5px 10px rgb(223, 172, 76), -5px -5px 10px rgb(223, 172, 76);
 }
 .project-overview .overview-images .thumbnail .thumbnail-overlay:hover, .project-overview .overview-images .thumbnail .thumbnail-overlay:focus {
   opacity: 1;
@@ -530,7 +530,6 @@ header .overlay {
 .projects p {
   text-align: left;
   font-size: 1.4rem;
-  padding: 20px;
 }
 
 .project-content {
@@ -538,25 +537,27 @@ header .overlay {
   margin: 100px 0;
   border: 10px solid #53713F;
   background-color: #0c341e;
+  position: relative;
 }
 .project-content h3 {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   position: relative;
 }
 .project-content h3::after {
   content: "";
-  width: 325px;
+  width: 300px;
   height: 5px;
   background-color: wheat;
   display: inline-block;
   opacity: 1;
   position: absolute;
-  bottom: -10px;
+  bottom: -15px;
   left: 40%;
 }
 .project-content .project-text {
   color: wheat;
   width: 45%;
+  padding: 0 20px;
 }
 .project-content .project-highlight {
   display: -webkit-box;
@@ -568,6 +569,7 @@ header .overlay {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 20px 0;
 }
 .project-content .links {
   margin-top: 25px;
@@ -578,21 +580,60 @@ header .overlay {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-size: 1.2rem;
 }
 .project-content .links a {
   text-decoration: none;
   color: coral;
   font-style: italic;
   margin: 0 auto;
-  width: 27%;
+  width: 35%;
   padding: 5px;
+}
+.project-content .links .arrows {
+  color: wheat;
+  font-size: 1.5rem;
+}
+.project-content .return,
+.project-content .next {
+  font-size: 0.9rem;
+  background-color: #395328;
+  color: wheat;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+}
+.project-content .next {
+  bottom: 2%;
+  left: 1%;
+}
+.project-content .return {
+  bottom: 2%;
+  right: 1%;
 }
 
 .about-me {
   background-color: wheat;
 }
 .about-me .about-text {
-  padding: 50px;
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about-me .about-text a {
+  font-size: 2rem;
+  color: darkgreen;
+  margin: 0 auto;
+  padding: 20px;
 }
 .about-me p {
   font-size: 1.5rem;
@@ -602,10 +643,11 @@ header .overlay {
 
 .skills {
   background-color: #0c341e;
-  height: 40vh;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 30px;
 }
 .skills h2 {
   margin: 10px;
@@ -620,6 +662,8 @@ header .overlay {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0;
   padding: 0;
   padding-bottom: 20px;
@@ -648,6 +692,9 @@ header .overlay {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .socials h2 {
   color: coral;
@@ -672,8 +719,9 @@ header .overlay {
 }
 
 .contact {
-  height: 100vh;
   background-color: wheat;
+  margin: 0;
+  margin-top: -60px;
 }
 .contact .contact-content {
   display: -webkit-box;
@@ -686,10 +734,18 @@ header .overlay {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.contact .contact-content .about-me h2 {
+  margin: 0;
 }
 .contact .contact-content p {
   color: #052011;
   font-size: 1.3rem;
+  font-style: italic;
+  margin: 10px 0;
 }
 .contact form {
   display: -webkit-box;
@@ -700,6 +756,7 @@ header .overlay {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 55%;
+  padding-bottom: 30px;
 }
 .contact form input,
 .contact form label,
@@ -749,12 +806,19 @@ header .overlay {
 
 footer {
   background-color: coral;
+  padding: 10px 0;
 }
 footer p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin: 0;
-  padding: 10px 0;
+  padding: 0;
   text-align: center;
+  font-weight: 700;
+}
+footer p:last-of-type {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 0.8rem;
 }
 footer a {
   text-decoration: none;
@@ -769,7 +833,7 @@ footer a {
 
 .slides-wrapper {
   background-color: #222;
-  padding-top: 56.25%;
+  padding-top: 50%;
   position: relative;
   overflow: hidden;
 }
@@ -790,8 +854,8 @@ footer a {
 }
 
 .slide-img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .slide-indicators {
@@ -863,6 +927,36 @@ footer a {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
+@media (max-width: 1275px) {
+  .project-content .project-text {
+    width: 100%;
+  }
+  .project-content .project-text p {
+    text-align: center;
+  }
+  .project-content .project-highlight {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .project-content .links {
+    margin-top: 30px;
+  }
+  .project-content .links a {
+    width: 70%;
+  }
+  .project-content .slider {
+    margin: 30px 0;
+  }
+  .project-content p {
+    margin-bottom: 0;
+  }
+  .project-content .react {
+    margin-bottom: 0;
+    position: relative;
+  }
+}
 @media (max-width: 1175px) {
   .header-text h1 {
     font-size: 6.5rem;
@@ -875,6 +969,43 @@ footer a {
   .header-text h2 {
     font-size: 2.2rem;
   }
+
+  .project-overview h2 {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .project-overview h2::after,
+.about-me h2::after,
+.contact-h2::after {
+    left: 35%;
+    bottom: 8px;
+  }
+
+  .project-overview h2::after {
+    width: 280px;
+    left: 30%;
+  }
+
+  .about-me h2::after {
+    width: 300px;
+  }
+
+  .contact-h2::after {
+    width: 360px;
+  }
+
+  .project-content h3::after {
+    left: 35%;
+  }
+
+  .contact form {
+    width: 80%;
+  }
+
+  .socials .social-links {
+    margin: 0 auto;
+  }
 }
 @media (max-width: 830px) {
   .header-text h1 {
@@ -886,7 +1017,7 @@ footer a {
 }
 @media (max-width: 768px) {
   header {
-    height: 140vh;
+    height: 150vh;
   }
 
   .header-content {
@@ -903,6 +1034,7 @@ footer a {
     height: -moz-fit-content;
     height: fit-content;
     max-width: 60%;
+    margin-top: 20px;
   }
 
   .header-text {

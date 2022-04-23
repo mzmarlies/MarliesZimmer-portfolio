@@ -5,13 +5,13 @@
 }
 
 .slides-wrapper {
-    
     // width: 500px;
     // height: 280px;
     background-color: #222;
-    padding-top: calc((9/16) * 100%);
+    padding-top: calc((7/14) * 100%);
     position: relative;
     overflow: hidden;
+    // object-fit: fill;
 }
 
 .slide {
@@ -28,7 +28,7 @@
 }
 
 .slide-img {
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .slide-indicators {

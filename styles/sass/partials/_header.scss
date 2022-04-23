@@ -2,7 +2,7 @@ header {
     background-image: url(../assets/background.jpg);
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: 110vh;
     position: relative;
     
     .overlay {
@@ -59,51 +59,3 @@ header {
     }
 }
 
-
-
-
-// h1::before {
-//     // background-image: url(../assets/.decal-img.jpg);
-//     content: "";
-//     width: 600px;
-//     height: 600px;
-//     border-radius: 50%;
-//     display: inline-block;
-//     // background: coral;
-//     border: 1px solid coral;
-//     margin-right: 10px;
-//     opacity: 0.7;
-//     position: absolute;
-//     top: -150px;
-//     right: -50px;
-//     z-index: 1;
-// }
-
-// h1::after {
-//     content: "";
-//     width: 400px;
-//     height: 400px;
-//     border-radius: 50%;
-//     display: inline-block;
-//     // background: rgb(246, 211, 147);
-//     // border: 1px solid rgb(246, 211, 147);
-//     border: 1px solid rgb(15, 5, 83);
-//     margin-right: 10px;
-//     opacity: 0.7;
-//     position: absolute;
-//     top: -200px;
-//     right: 200px;
-//     z-index: 1;
-// }
-
-
-// .decal-img {
-//     // background-image: url(../assets/hexagon.png);
-//     // height: 50px;
-//     // width: 50px;
-//     // color: white;
-//     border: 1px solid white;
-//     height: 100px;
-//     width: 100px;
-//     border-radius: 50%;
-// }

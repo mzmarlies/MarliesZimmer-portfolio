@@ -1,15 +1,24 @@
 .contact {
-    height: 100vh;
+    // height: 100vh;
     background-color: wheat;
+    margin: 0;
+    margin-top: -60px;
 
     .contact-content {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        
+        .about-me h2 {
+            margin: 0;
+        }
 
         p {
             color: #052011;
             font-size: 1.3rem;
+            font-style: italic;
+            margin: 10px 0;
         }
     }
 
@@ -17,6 +26,7 @@
         display: flex;
         flex-direction: column;
         width: 55%;
+        padding-bottom: 30px;
         
         input,
         label, 
@@ -33,17 +43,13 @@
             &::placeholder {
                 color: #ffefd1;
                 opacity: 1;
-
-                // &:focus,
-                // &:hover {
-                //     color: white;
-                // }
-
             }
 
             &:focus,
             &:hover {
                 background-color: #3b4d3a;
+                // color: white;
+                // opacity: 1;
             }
         }
     
