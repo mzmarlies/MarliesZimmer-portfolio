@@ -1,0 +1,24 @@
+.about-me {
+    background-color: wheat;
+    
+    .about-text {
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        a {
+            font-size: 2rem;
+            color: darkgreen;
+            margin: 0 auto;
+            padding: 20px;
+
+        }
+    }
+
+    p {
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 10px 0;
+    }
+}
