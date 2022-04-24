@@ -16,7 +16,7 @@
 
         p {
             color: #052011;
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             font-style: italic;
             margin: 10px 0;
         }
@@ -35,13 +35,14 @@
             margin: 10px;
             padding: 10px;
             background-color: #5f7050;
-            color: #fbedd5;
+            color: #f8eede;
+            opacity: 1;
             border-radius: 5px;
             font-family: 'Montserrat',
             sans-serif;;
 
             &::placeholder {
-                color: #ffefd1;
+                color: #f8eede;
                 opacity: 1;
             }
 
