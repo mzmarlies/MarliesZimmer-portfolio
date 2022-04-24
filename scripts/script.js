@@ -14,9 +14,10 @@ function createImageSlider(
     slider.className = 'slider';
     slider.innerHTML = `
         <div class="slides-wrapper"></div>
-        <div class="slide-indicators"></div>
-        <button type="button" class="prev-button"></button>
-        <button type="button" class="next-button"></button>
+        <div class="slide-indicators">
+        </div>
+        <button type="button" class="prev-button"><i class="fa-solid fa-angles-left"></i></button>
+        <button type="button" class="next-button"><i class="fa-solid fa-angles-right"></i></button>
     `;
     const [wrapper, indicators, prevBtn, nextBtn] = slider.children;
     const fill = 'forwards';

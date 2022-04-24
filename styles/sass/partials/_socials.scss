@@ -7,10 +7,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 
     h2 {
         color: coral;
-        text-shadow: 2px 2px wheat;
+        text-shadow: 1.5px 1.5px black;
         text-align: center;
         font-weight: bold;
     }
