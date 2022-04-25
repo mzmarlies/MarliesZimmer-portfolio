@@ -951,14 +951,14 @@ footer a {
 }
 
 .hamburger {
-  display: none;
+  display: block;
   position: absolute;
   width: 40px;
   height: 40px;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background: none;
+  background: transparent;
   outline: none;
   border: none;
   cursor: pointer;
@@ -1249,7 +1249,7 @@ footer a {
 
   .hamburger,
 .mobile-nav {
-    display: block;
+    visibility: visible;
   }
 
   .header-text h1 {

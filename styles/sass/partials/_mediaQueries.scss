@@ -286,7 +286,8 @@
 
     .hamburger,
     .mobile-nav {
-        display: block;
+        // display: block;
+        visibility: visible;
     }
 
     .header-text {
