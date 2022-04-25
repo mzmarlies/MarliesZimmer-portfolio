@@ -1,3 +1,5 @@
+const App = () => {}
+
 // creating a function to create slider div
 // setting index default to zero
 // adding the structure to each slider child
@@ -112,6 +114,18 @@ const slider3 = createImageSlider([
     './assets/PG-3.png',
     './assets/PG-4.png'
 ]);
+
+
+window.onload = function () {
+    const menuBtn = document.querySelector('.hamburger');
+    const mobileMenu = document.querySelector('.mobile-nav')
+
+    menuBtn.addEventListener('click', function() {
+        menuBtn.classList.toggle('is-active');
+        mobileMenu.classList.toggle('is-active');
+    })
+}
+
 
 // append slider to page
 document.querySelector('#uts-javascript-here').appendChild(slider1);

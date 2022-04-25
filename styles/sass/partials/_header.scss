@@ -2,14 +2,14 @@ header {
     background-image: url(../assets/background.jpg);
     background-position: center;
     background-size: cover;
-    height: 110vh;
-    position: relative;
+    // height: 100vh;
+    // position: relative;
     
     .overlay {
         height: 100%;
         width: 100%;
         background: rgba(5, 28, 3, 0.4);
-        position: absolute;
+        // position: absolute;
         top: 0;
         bottom: 0;
         right: 0;
@@ -22,6 +22,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 20px;
 }
 
 .header-text {
