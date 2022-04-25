@@ -950,50 +950,28 @@ footer a {
   background-color: rgba(245, 222, 179, 0.7);
 }
 
-.hamburger {
-  display: block;
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background: transparent;
-  opacity: 0;
-  outline: none;
+.dropdown {
+  display: none;
   border: none;
+  background-color: transparent;
+  margin: 0;
+}
+
+.fa-plus {
+  display: none;
+  position: absolute;
   cursor: pointer;
   padding-top: 30px;
   z-index: 30;
-  margin-left: 30px;
-}
-
-.hamburger .bar,
-.hamburger::after,
-.hamburger::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: wheat;
-  margin: 6px 0px;
+  color: wheat;
+  font-size: 2rem;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  border-radius: 5px;
 }
 
-.hamburger.is-active .bar {
-  opacity: 0;
-}
-
-.hamburger.is-active::before {
-  -webkit-transform: rotate(-45deg) translate(0, 14px);
-          transform: rotate(-45deg) translate(0, 14px);
-}
-
-.hamburger.is-active::after {
-  -webkit-transform: rotate(45deg) translate(0, -15px);
-          transform: rotate(45deg) translate(0, -15px);
+.fa-plus.is-active {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .mobile-nav {
@@ -1019,6 +997,7 @@ footer a {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0;
+  margin: 0;
 }
 .mobile-nav ul li {
   margin: 20px 0;
@@ -1248,9 +1227,10 @@ footer a {
     display: none;
   }
 
-  .hamburger,
+  .dropdown,
+.fa-plus,
 .mobile-nav {
-    opacity: 1;
+    display: block;
   }
 
   .header-text h1 {
