@@ -240,6 +240,14 @@ app.userClick = function(){
     })
 }
 
+// how do I clear the form after it's been submitted?
+// formspree boots the user back to a form that still has inputs 
+
+// app.clearForm = function() {
+//     document.querySelector('form').addEventListener('submit', function() {
+//         document.querySelector('form').innerHTML = ''
+//     })
+// }
 
 // app.menuBtn.addEventListener('click', toggleBtn = () => {
 //         menuBtn.classList.toggle('is-active');
@@ -249,6 +257,7 @@ app.userClick = function(){
 app.init = () => {
     // toggleBtn();
     app.userClick();
+    // app.clearForm();
 };
 
 app.init();

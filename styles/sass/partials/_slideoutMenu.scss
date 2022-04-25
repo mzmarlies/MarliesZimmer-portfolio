@@ -8,9 +8,10 @@
     outline: none;
     border: none;
     cursor: pointer;
-    padding-top: 30px;
+    padding-top: 10px;
     z-index: 30;
-    color: wheat;
+    margin-left: 10px;
+    // color: coral;
 
 }
 
@@ -21,7 +22,8 @@
     display: block;
     width: 100%;
     height: 4px;
-    background-color: wheat;
+    // background-color: wheat;
+    background-color: coral;
     margin: 6px 0px;
     transition: 0.4s;
     border-radius: 5px;
@@ -50,7 +52,7 @@
     display: none;
     z-index: 20;
     background-color: hsla(147, 73%, 7%, 90%);
-    padding-top: 60px;
+    padding-top: 30px;
     border-radius: 0 0 5px 0;
     transition: 0.5s;
     
