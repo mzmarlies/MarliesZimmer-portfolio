@@ -1,4 +1,3 @@
-const App = () => {}
 
 // creating a function to create slider div
 // setting index default to zero
