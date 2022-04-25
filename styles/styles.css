@@ -959,6 +959,7 @@ footer a {
      -moz-appearance: none;
           appearance: none;
   background: transparent;
+  opacity: 0;
   outline: none;
   border: none;
   cursor: pointer;
@@ -1249,7 +1250,7 @@ footer a {
 
   .hamburger,
 .mobile-nav {
-    visibility: visible;
+    opacity: 1;
   }
 
   .header-text h1 {
