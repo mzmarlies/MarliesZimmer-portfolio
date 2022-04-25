@@ -229,12 +229,11 @@ document.querySelector('#pg-javascript-here').appendChild(slider3);
 
 const app = {};
 
-
-app.menuBtn = document.querySelector('.hamburger');
+app.menuBtn = document.querySelector('.fa-plus');
 app.mobileMenu = document.querySelector('.mobile-nav')
 
 app.userClick = function(){
-    document.querySelector('.hamburger').addEventListener('click', function(){
+    document.querySelector('.fa-plus').addEventListener('click', function(){
         app.menuBtn.classList.toggle('is-active');
         app.mobileMenu.classList.toggle('is-active');
     })
@@ -249,10 +248,6 @@ app.userClick = function(){
 //     })
 // }
 
-// app.menuBtn.addEventListener('click', toggleBtn = () => {
-//         menuBtn.classList.toggle('is-active');
-//         mobileMenu.classList.toggle('is-active');
-//     });
 
 app.init = () => {
     // toggleBtn();

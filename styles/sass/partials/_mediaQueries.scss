@@ -284,10 +284,10 @@
         display: none;
     }
 
-    .hamburger,
-    .mobile-nav {
-        // display: block;
-        opacity: 1;
+    .dropdown, 
+    .fa-plus,
+    .mobile-nav{
+        display: block;
     }
 
     .header-text {
