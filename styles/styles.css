@@ -952,7 +952,7 @@ footer a {
 
 .hamburger {
   display: none;
-  position: fixed;
+  position: absolute;
   width: 40px;
   height: 40px;
   -webkit-appearance: none;
@@ -962,9 +962,9 @@ footer a {
   outline: none;
   border: none;
   cursor: pointer;
-  padding-top: 10px;
+  padding-top: 30px;
   z-index: 30;
-  margin-left: 10px;
+  margin-left: 30px;
 }
 
 .hamburger .bar,
@@ -974,7 +974,7 @@ footer a {
   display: block;
   width: 100%;
   height: 4px;
-  background-color: coral;
+  background-color: wheat;
   margin: 6px 0px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -1004,7 +1004,7 @@ footer a {
   display: none;
   z-index: 20;
   background-color: hsla(147deg, 73%, 7%, 0.9);
-  padding-top: 30px;
+  padding-top: 60px;
   border-radius: 0 0 5px 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
