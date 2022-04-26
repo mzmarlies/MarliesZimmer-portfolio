@@ -1,5 +1,4 @@
 .contact {
-    // height: 100vh;
     background-color: wheat;
     margin: 0;
     margin-top: -60px;
@@ -49,12 +48,9 @@
             &:focus,
             &:hover {
                 background-color: #3b4d3a;
-                // color: white;
-                // opacity: 1;
             }
         }
     
-
         .submit {
             width: 30%;
             margin: 0 auto;

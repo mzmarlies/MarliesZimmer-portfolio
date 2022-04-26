@@ -2,14 +2,11 @@
     background-color: #0c341e;
     height: auto;
     display: flex;
-    padding-bottom: 30px;
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
-    // text-align: center;
+    padding-bottom: 10px;
 
     h2 {
-        margin: 10px;
+        margin: 0;
+        margin-top: 10px;
     }
 
     .toolkit-icons {
@@ -20,7 +17,6 @@
         margin: 0;
         padding: 0;
         padding-bottom: 20px;
-
         
         li {
             list-style: none;
@@ -34,38 +30,5 @@
                 color: #FFBA61;
             }
         }
-
-        // .fa-html5 {
-        //     color: #f16529;
-        // }
-        // .fa-css3 {
-        //     color: #2862e9;
-        // }
-
-        // .fa-js {
-        //     color: #e9d44d;
-        // }
-
-        // .fa-react {
-        //     color: #5ed3f3;
-        // }
-
-        // .devicon-firebase-plain {
-        //     color: #f7a213;
-        // }
-
-        // .devicon-git-plain {
-        //     color: #e94e31;
-        // }
-
-        // .fa-sass {
-        //     color: #c36192;
-        // }
     }
-
 }
-
-
-// .toolkit-icons {
-
-// }

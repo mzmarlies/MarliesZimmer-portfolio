@@ -273,8 +273,8 @@ h2 {
 }
 
 .project-overview h2::after {
-  width: 525px;
-  left: 35%;
+  width: 500px;
+  left: 22%;
 }
 
 .about-me h2::after {
@@ -672,7 +672,7 @@ header .overlay {
 .about-me i:hover, .about-me i:focus {
   -webkit-transform: translateY(2px);
           transform: translateY(2px);
-  text-shadow: 1px 1px #0c341e;
+  text-shadow: 1px 1px 2px #ffba6c, -1px -1px 2px #ffba6c;
 }
 
 .skills {
@@ -681,10 +681,11 @@ header .overlay {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 .skills h2 {
-  margin: 10px;
+  margin: 0;
+  margin-top: 10px;
 }
 .skills .toolkit-icons {
   display: -webkit-box;
@@ -976,19 +977,19 @@ footer a {
   position: fixed;
   cursor: pointer;
   padding: 5px;
-  padding-top: 15px;
+  padding-top: 25px;
   z-index: 30;
   color: coral;
   font-size: 1.5rem;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   margin-left: -25px;
   text-shadow: 0.5px 0.5px black;
 }
 
 .fa-plus.is-active {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .mobile-nav {

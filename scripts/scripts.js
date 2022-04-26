@@ -1,3 +1,6 @@
+// when there's time, I want to restructure the js to have a better carousel
+
+
 const app = {};
 
 
