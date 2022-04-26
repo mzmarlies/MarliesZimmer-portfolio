@@ -8,10 +8,12 @@ ul {
     margin: 0;
 }
 
+
 img {
     width: 100%;
     height: 100%;
 }
+
 
 h1, 
 h2, 
@@ -23,16 +25,17 @@ form {
     margin: 0;
 }
 
+
 h2 {
     font-size: 2.8rem;
     font-weight: 700;
     padding: 20px;
 }
 
+
 .project-overview h2,
 .about-me h2, 
 .contact-h2 {
-    // color: #12261e;
     color: #235a37;
     text-shadow: 3px 3px 3px #DDA15E;
     padding: 30px 0;
@@ -51,24 +54,29 @@ h2 {
     }
 }
 
+
 .project-overview h2::after {
-    width: 525px;
-    left: 35%;
+    width: 500px;
+    left: 22%;
 }
+
 
 .about-me h2::after {
     width: 300px;
     left: 43%;
 }
 
+
 .contact-h2::after {
     width: 360px;
     left: 40%;
 }
 
+
 h3 {
     font-weight: 400;
 }
+
 
 .skills h2,
 .projects h3 {
@@ -85,6 +93,7 @@ p {
     font-family: 'Mulish', sans-serif;
 }
 
+
 .wrapper {
     max-width: 1440px;
     width: 85%;
@@ -93,10 +102,8 @@ p {
 
 
 nav ul {
-    // z-index: 10; 
     display: flex;
     justify-content: flex-end;
-
 
     li {
         z-index: 10;
@@ -107,7 +114,6 @@ nav ul {
     a {
         text-decoration: none;
         color: wheat;
-        // color: rgb(15, 5, 83);
         font-weight: 400;
 
         &:hover,
@@ -117,6 +123,7 @@ nav ul {
         }
     }
 }
+
 
 .header-text a,
 .submit, 
@@ -133,7 +140,6 @@ nav ul {
 
     &:hover,
     &:focus {
-        // background-color: rgb(252, 179, 211);
         background-color: rgb(188, 78, 37);
         color: white;
         cursor: pointer;

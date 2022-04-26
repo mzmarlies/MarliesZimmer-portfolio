@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Mulish&display=swap;700&display=swap" rel="stylesheet">
-     rel="stylesheet"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Mulish&display=swap" rel="stylesheet">
@@ -20,9 +18,10 @@
 
 <body>
     <header>
-
         <div class="overlay">
             <div class="wrapper">
+
+                <!-- regular menu -->
                 <nav class="regular-menu">
                     <ul>
                         <li><a href="#home">Home</a></li>
@@ -32,28 +31,23 @@
                     </ul>
                 </nav>
                 
+                <!-- button to access slideout menu -->
+                <button class="dropdown">
+                    <!-- <div class="bar"></div> -->
+                    <i class="fa-solid fa-plus">
+                        <span class="sr-only">Click to Access Dropdown Menu</span>
+                    </i>  
+                </button>
+                <!-- slideout menu for mobile size -->
+                <nav class="mobile-nav">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#project-overview">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
                 
-                <!-- add accessibility on dropdown -->
-                
-                        <!-- slideout menu for mobile size -->
-                        <button class="dropdown">
-                            <!-- <div class="bar"></div> -->
-                            <i class="fa-solid fa-plus"></i>
-                        </button>
-                        
-                        <nav class="mobile-nav">
-                            <ul>
-                                <li><a href="#home">Home</a></li>
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#project-overview">Projects</a></li>
-                                <li><a href="#contact">Contact</a></li>
-                            </ul>
-                        </nav>
-                
-                        <!-- /////////////////////////////////// -->
-
-
-
                 <div class="header-content" id="home">
                     <div class="header-text">
                         <h1>Marlies Zimmer</h1>
@@ -69,13 +63,14 @@
             </div> <!-- end of wrapper -->
 
         </div> <!-- end of overlay -->
+
     </header>
 
-    <main>
 
+    <main>
         <section class="about-me" id="about">
             <div class="wrapper">
-                <h2>about me.</h2>
+                <h2>about me</h2>
                 <div class="about-text">
                     <p>
                         I am a front-end web developer with a background in making animal simulation models for veterinary schools where I honed my abilities to think critically, analyze complex problems, work efficiently under pressure, and work well independently as well as with a team.
@@ -94,9 +89,10 @@
             </div>
         </section>
 
+
         <section class="skills" id="toolkit">
             <div class="wrapper">
-                <h2>my toolkit.</h2>
+                <h2>my toolkit</h2>
                 <ul class="toolkit-icons">
                     <li>
                         <i class="fa-brands fa-html5" aria-hidden="true" title="HTML5"></i>
@@ -130,11 +126,11 @@
             </div>
         </section>
 
+
         <div id="project-overview"  class="project-overview">
-
-            <h2>projects overview.</h2>
-
+            <h2>projects overview</h2>
             <div class="thumbnails">
+
                 <div class="box">
                     <div class="front">
                         <img src="./assets/under-the-sea3.jpeg" alt="thumbnail of project title page with sea creatures on it">
@@ -168,78 +164,8 @@
                     </a>
                 </div>
             </div>
-
-    
-                
-
-                <!-- <div class="project-summary">
-                    <div class="overview-images"> -->
-    
-                        <!-- <div class="front">
-                            <div class="front">
-                                <img src="./assets/under-the-sea3.jpeg" alt="thumbnail of project title page with sea creatures on it">
-                            </div>
-                            <a class="back" href="#project-1" title="Click for to see project">
-                                <div class="thumbnail-overlay">
-                                    <p>Multi-Page PSD Conversion</p>
-                                    <p>(HTML5, CSS3, SASS)</p>
-                                </div>
-                            </a>
-                        </div> -->
-                        
-    
-                <!-- <div class="box">
-                    <div class="front">
-                        <img src="./assets/dog-discovery.jpeg" alt="thumbnail of project title page with sea creatures on it">
-                        <a class="back" href="#project-2" title="Click for to see project">
-                            <p>Javascript API Integration</p>
-                            <p>(HTML5, CSS3, SASS, JavaSript)</p>
-                        </a>
-                    </div>
-                </div> -->
-                        
-    
-    
-                        <!-- <div class="front">
-                            <img src="./assets/paint-gallery.jpeg" alt="thumbnail of project placeholder">
-                            <a class="back" href="#project-3" title="Click for to see project">
-                                <div class="thumbnail-overlay">
-                                    <p>CodePen PSD Conversion</p>
-                                    <p>(HTML5 & CSS3)</p>
-                                </div>
-                            </a>
-                        </div> -->
-    
-    
-                        <!-- <div class="thumbnail .carousel-item">
-                            <img src="./assets/brushes.jpeg" alt="thumbnail of project placeholder">
-                            <a href="#project-3" title="Click for to see project">
-                                <div class="thumbnail-overlay">
-                                    <p>Lorem, ipsum dolor.</p>
-                                    <p>( LORM, IPSM , DOLOR. )</p>
-                                </div>
-                            </a>
-                        </div>
-    
-    
-                        <div class="thumbnail .carousel-item">
-                            <img src="./assets/contact.jpeg" alt="thumbnail of project placeholder">
-                            <a href="#project-3" title="Click for to see project">
-                                <div class="thumbnail-overlay">
-                                    <p>Lorem, ipsum dolor.</p>
-                                    <p>( LORM, IPSM , DOLOR. )</p>
-                                </div>
-                            </a>
-                        </div> -->
-        
-                    <!-- </div>  -->
-                    <!-- end of the images container -->
-                    
-            <!-- </div>  -->
-                <!-- end of the carousel -->
-
-
         </div>
+
 
         <div class="projects">
             <div class="wrapper">
@@ -251,9 +177,7 @@
                             <p>
                                 This was a solo, multi-page photoshop design conversion and required using HTML5, CSS3, and SASS, and was created with current accessibilty standards to ensure everyone can access this work. I made it to be fully responsive down to 320px and was a lot of fun to put together.
                             </p>  
-                        
                         </div> <!-- end of project-text -->
-    
                         <div id="uts-javascript-here"></div>
                     </div>
                     <div class="links">
@@ -272,9 +196,7 @@
                                 This multi-page photoshop design conversion involved using HTML5, CSS3, and SASS, and was created following current accessibilty standards to ensure everyone can access this work. I made it to be fully responsive down to
                                 320px and was a lot of fun to put together.
                             </p>
-
                         </div> <!-- end of project-text -->
-                        
                         <div id="dd-javascript-here"></div>
                     </div>
                     <div class="links">
@@ -285,7 +207,6 @@
                     <a class="next" href="#project-3">Next Project</a>
                 </div>
                 
-
                 <div class="project-content" id="project-3">
                     <h3 class="react">Paint Gallery</h3>
                     <div class="project-highlight">
@@ -293,14 +214,11 @@
                             <p>
                                 This single-page photoshop design conversion involved using HTML5 and CSS3. Following current accessibilty standards, I made it to be fully responsive down to 320px. Becuase I was using Code Pen I couldn't rely on the autofill of my text editor to complete the CSS, which made for an interesting and engaging challenge.
                             </p>
-                        </div> <!-- end of project-text -->
-                        
+                        </div> <!-- end of project-text -->                 
                         <div id="pg-javascript-here" class="javascript"></div>
                     </div>
                     <div class="links">
                         <a href="https://codepen.io/mzmarlies/pen/dyZwzqJ">✨Click to See On CodePen✨</a>
-                        <!-- <a href="#">✨Click to See Live Project✨</a>
-                        <a href="#">Click to see Repository</a> -->
                     </div>
                     <a class="return" href="#project-overview">Back to Overview</a>
                     <a class="next" href="#contact">To Contact</a>
@@ -309,17 +227,16 @@
             </div> <!-- end of wrapper -->   
         
         </div> <!-- end of project section -->
-    </main>
 
+    </main>
 
 
     <section class="contact" id="contact">
         <div class="wrapper">
-            <h2 class="contact-h2">get in touch.</h2>
+            <h2 class="contact-h2">get in touch</h2>
             <div class="contact-content">
                 <p>Thank you for taking the time to look over my work. Please feel free to reach out to me using this form:</p>
-                    <!-- reach me at marliesclaire@gmail.com for any work-related inquiries. -->
-                <!-- <a href="#">View Resume</a> -->
+                
                 <form action="https://formspree.io/f/xayvlqlr" method="POST" class="contactForm" name="contactForm">
                     <label for="name" class="sr-only">Name</label>
                     <input type="text" id="name" placeholder="Name">
@@ -341,7 +258,7 @@
 
     <section class="socials">
         <div class="wrapper">
-            <h2>find me elsewhere.</h2>
+            <h2>find me elsewhere</h2>
             <nav class="socials-nav">
                 <ul>
                     <li>
@@ -373,21 +290,13 @@
         </div>
     </section>
 
-    <!-- <section class="thank-you">
-        <div class="wrapper">
-            <h3>Thank you for checking out my page!</h3>
-        </div>
-    </section> -->
-
-
 
     <footer>
         <p>Made by Marlies Zimmer</p>
         <p>
             <a href="https://www.flaticon.com/free-icons/hexagon" title="hexagon icons">Hexagon icons created by Pixel perfect -
             Flaticon</a>
-        </p>
-        
+        </p>  
     </footer>
 
     <script src="./scripts/script.js"></script>
