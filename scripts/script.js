@@ -96,6 +96,7 @@
 // };
 
 // app.init();
+
 function createImageSlider(
     images,
     {
@@ -239,20 +240,27 @@ app.userClick = function(){
     })
 }
 
-// how do I clear the form after it's been submitted?
-// formspree boots the user back to a form that still has inputs 
+// To clear the form after it's been submitted:
+// write a function that uses the fetch api to submit a post request to the form endpoint.
+// have a fetch request with a POST 
+// set url to be formspree
+// pass in param and pass to formspree
+// if everythings fine, replace html with "all good" message
+// if not, alert an error
+// include prevent default
 
-// app.clearForm = function() {
-//     document.querySelector('form').addEventListener('submit', function() {
-//         document.querySelector('form').innerHTML = ''
-//     })
-// }
+
+app.clearForm = function() {
+    document.querySelector('#name').innerHTML = '';
+    document.querySelector('#email').innerHTML = '';
+    document.querySelector('#message').innerHTML = '';
+}
 
 
 app.init = () => {
     // toggleBtn();
     app.userClick();
-    // app.clearForm();
+    app.clearForm();
 };
 
 app.init();

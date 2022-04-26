@@ -7,13 +7,17 @@
 
 .fa-plus { 
     display: none;
-    position: absolute;
+    position: fixed;
     cursor: pointer;
-    padding-top: 30px;
+    padding: 5px;
+    padding-top: 15px;
     z-index: 30;
-    color: wheat;
-    font-size: 2rem;
-    transition: 0.4s;
+    // color: wheat;
+    color: coral;
+    font-size: 1.5rem;
+    transition: 0.3s;
+    margin-left: -25px;
+    text-shadow: 0.5px 0.5px black;
 }
 
 
