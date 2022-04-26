@@ -22,5 +22,13 @@
         padding: 10px 0;
     }
 
+    i {
+        &:hover,
+        &:focus {
+            transform: translateY(2px);
+            text-shadow: 1px 1px #0c341e;
+        }
+    }
+
     
 }
