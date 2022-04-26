@@ -1,122 +1,110 @@
+.slider {
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.slides-wrapper {
+    // width: 500px;
+    // height: 280px;
+    background-color: #222;
+    padding-top: calc((7/14) * 100%);
+    position: relative;
+    overflow: hidden;
+    // object-fit: fill;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(100%, 0);
+}
+
+.slide.active {
+    transform: translate(0, 0);
+}
+
+.slide-img {
+    object-fit: contain;
+}
+
+.slide-indicators {
+    text-align: center;
+    position: absolute;
+    bottom: -38px;
+    left: 0;
+    width: 100%;
+    height: 38px;
+    // background-color: #eee;
+}
+
+.slide-indicators button {
+    width: 5px;
+    height: 5px;
+    padding: 0;
+    margin: 0 15px;
+    background-color: coral;
+    border-radius: 50%;
+    border: none;
+    // cursor: pointer;
+    outline: none;
+    position: relative;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-// .slider {
-//     position: relative;
-//     width: 600px;
-//     margin: 0 auto;
-// }
-
-// .slides-wrapper {
-//     // width: 500px;
-//     // height: 280px;
-//     background-color: #222;
-//     padding-top: calc((7/14) * 100%);
-//     position: relative;
-//     overflow: hidden;
-//     // object-fit: fill;
-// }
-
-// .slide {
-//     width: 100%;
-//     height: 100%;
+// .slide-indicators button::after {
+//     content: '';
 //     position: absolute;
-//     top: 0;
-//     left: 0;
-//     transform: translate(100%, 0);
-// }
-
-// .slide.active {
-//     transform: translate(0, 0);
-// }
-
-// .slide-img {
-//     object-fit: contain;
-// }
-
-// .slide-indicators {
-//     text-align: center;
-//     position: absolute;
-//     bottom: -38px;
-//     left: 0;
-//     width: 100%;
-//     height: 38px;
-//     // background-color: #eee;
-// }
-
-// .slide-indicators button {
-//     width: 5px;
-//     height: 5px;
-//     padding: 0;
-//     margin: 0 15px;
-//     background-color: coral;
-//     border-radius: 50%;
-//     border: none;
-//     // cursor: pointer;
-//     outline: none;
-//     position: relative;
+//     width: 300%;
+//     height: 300%;
+//     left: 50%;
+//     top: 50%;
+//     transform: translate(-50%, -50%);
 // }
 
 
-// // .slide-indicators button::after {
-// //     content: '';
-// //     position: absolute;
-// //     width: 300%;
-// //     height: 300%;
-// //     left: 50%;
-// //     top: 50%;
-// //     transform: translate(-50%, -50%);
-// // }
+.slide-indicators button.active {
+    background-color: wheat;
+}
 
 
-// .slide-indicators button.active {
-//     background-color: wheat;
-// }
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 100%;
+    // background-color: rgb(245, 222, 179, 0.4);
+    background-color: rgb(245, 222, 179, 0.5);
+    // border-radius: 0 100% 100% 0;
+    cursor: pointer;
+    border: none;
+    display: none;
+    i {
+        font-size: 1.5rem;
+        color: #052011;
+    }
+}
 
+.next-button {
+    left: auto;
+    right: 0;
+}
 
-// .prev-button,
-// .next-button {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 15%;
-//     height: 100%;
-//     // background-color: rgb(245, 222, 179, 0.4);
-//     background-color: rgb(245, 222, 179, 0.5);
-//     // border-radius: 0 100% 100% 0;
-//     cursor: pointer;
-//     border: none;
-//     display: none;
-//     i {
-//         font-size: 1.5rem;
-//         color: #052011;
-//     }
-// }
+// is it ok to have these hover affects not show up with focus since there are buttons to navigate through images?
+// .slides-wrapper:focus ~ .next-button,
+// .slides-wrapper:focus ~ .prev-button,
+.slides-wrapper:hover ~ .prev-button,
+.slides-wrapper:hover ~ .next-button, 
+.prev-button:hover,
+.next-button:hover {
+    display: block;
+}
 
-// .next-button {
-//     left: auto;
-//     right: 0;
-// }
-
-// // is it ok to have these hover affects not show up with focus since there are buttons to navigate through images?
-// // .slides-wrapper:focus ~ .next-button,
-// // .slides-wrapper:focus ~ .prev-button,
-// .slides-wrapper:hover ~ .prev-button,
-// .slides-wrapper:hover ~ .next-button, 
-// .prev-button:hover,
-// .next-button:hover {
-//     display: block;
-// }
-
-// .prev-button:active,
-// .next-button:active {
-//     background-color: rgb(245, 222, 179, 0.7);}
+.prev-button:active,
+.next-button:active {
+    background-color: rgb(245, 222, 179, 0.7);}
