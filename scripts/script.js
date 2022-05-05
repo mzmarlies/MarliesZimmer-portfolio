@@ -94,10 +94,9 @@ const slider2 = createImageSlider([
 ]);
 
 const slider3 = createImageSlider([
-    './assets/PG-1.png',
-    './assets/PG-2.png',
-    './assets/PG-3.png',
-    './assets/PG-4.png'
+    './assets/memory-test-1.png',
+    './assets/memory-test-2.png',
+    './assets/memory-test-3.png'
 ]);
 
 

@@ -230,8 +230,12 @@
         }
     }
 
+    h4 {
+        display: block;
+    }
 
     .project-overview {
+
         .thumbnails {
             flex-wrap: wrap;
             padding-bottom: 20px;
@@ -596,6 +600,10 @@
             margin: 0 auto;
             margin-left: 100px;
         }
+    }
+    h4, 
+    .project-text h4 {
+        font-size: 0.9rem;
     }
 }
 
