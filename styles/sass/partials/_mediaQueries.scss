@@ -1,4 +1,5 @@
 @media (max-width: 1275px) {
+
     .project-content {
         .project-text {
             width: 100%;
@@ -46,6 +47,10 @@
 
 
 @media (max-width: 1175px) {
+    header {
+            height: auto;
+        }
+
     .header-text {
         h1 {
             font-size: 6.5rem;
