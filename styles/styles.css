@@ -380,6 +380,7 @@ header {
   background-position: center;
   background-size: cover;
   padding-bottom: 50px;
+  height: 100vh;
 }
 header .overlay {
   height: 100%;
@@ -1081,6 +1082,10 @@ footer a {
   }
 }
 @media (max-width: 1175px) {
+  header {
+    height: auto;
+  }
+
   .header-text h1 {
     font-size: 6.5rem;
   }
