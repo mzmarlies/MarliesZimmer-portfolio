@@ -47,9 +47,9 @@
 
 
 @media (max-width: 1175px) {
-    header {
-            height: auto;
-        }
+    // header {
+    //         height: auto;
+    //     }
 
     .header-text {
         h1 {
@@ -194,46 +194,79 @@
         }
     }
 
-
-    .header-text {
-        h1 {
-            font-size: 5rem;
-        }
+        //   .header-text {
+        //       justify-content: center;
+        //       text-align: center;
     
-        h2 {
-            font-size: 2rem;
+        //       h1 {
+        //           font-size: 4.5rem;
+        //           margin: 50px auto;
+        //           padding: 0;
+        //       }
+    
+        //     }
+            
+    .header-text {
+        width: 100%;
+        align-items: center;
+
+        h1 {
+            text-align: center;
+            font-size: 3.5rem;
+            padding: 0;
+            width: 70%;
+            margin: 30px;
+            padding-top: 30px;
         }
+        
+        h2 {
+            font-size: 1.9rem;
+        }
+        
+        a {
+            align-self: center;
+            margin: 20px 0;
+        }
+    }
+    .regular-menu {
+        display: none;
+    }
+
+
+    .dropdown, 
+    .fa-plus,
+    .mobile-nav{
+        display: block;
     }
 
 
     .header-content {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         
         .portrait {
-            height: fit-content;
-            max-width: 65%;
-            margin-top: 10px;
-            padding: 30px;
+            max-width: 50%;
+            padding: 10px 0;
         }
     }
 
 
-    .header-text {
-        justify-content: center;
-        text-align: center;
+    // .header-text {
+    //     justify-content: center;
+    //     text-align: center;
 
-        h1 {
-            font-size: 4.5rem;
-            margin: 50px auto;
-            padding: 0;
-        }
+    //     h1 {
+    //         font-size: 4.5rem;
+    //         margin: 50px auto;
+    //         padding: 0;
+    //     }
 
-        a {
-            align-self: center;
-            margin: 20px 0;
-        }
-    }
+    //     a {
+    //         align-self: center;
+    //         margin: 20px 0;
+    //     }
+    // }
 
     h4 {
         display: block;
@@ -313,16 +346,16 @@
     }
 
 
-    .regular-menu {
-        display: none;
-    }
+    // .regular-menu {
+    //     display: none;
+    // }
 
 
-    .dropdown, 
-    .fa-plus,
-    .mobile-nav{
-        display: block;
-    }
+    // .dropdown, 
+    // .fa-plus,
+    // .mobile-nav{
+    //     display: block;
+    // }
 
 
     .header-text {
@@ -367,10 +400,15 @@
             margin: 30px auto;
         }
 
+        
         h2 {
             font-size: 1.3rem;
         }
     }
+    // .portrait {
+    //     max-width: 100%;
+    //     height: 300px;
+    // }
 
 
     .projects {
@@ -496,6 +534,11 @@
     .header-content {
         margin: 0 auto;
     }
+
+    // .portrait {
+    //     width: 300px;
+    //     height: 30px;
+    // }
     
 
     .header-text a,

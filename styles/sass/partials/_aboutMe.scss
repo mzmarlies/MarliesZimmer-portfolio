@@ -21,6 +21,8 @@
     }
     
     i {
+        transition: 0.3s;
+        
         &:hover,
         &:focus {
             transform: translateY(2px);
