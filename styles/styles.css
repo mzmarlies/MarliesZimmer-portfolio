@@ -734,11 +734,11 @@ header .overlay {
   margin: 0;
   padding: 15px 0;
 }
-.about-me i {
+.about-me .arrows {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.about-me i:hover, .about-me i:focus {
+.about-me .arrows:hover, .about-me .arrows:focus {
   -webkit-transform: translateY(2px);
           transform: translateY(2px);
   text-shadow: 1px 1px 4px #FFBA61, -1px -1px 4px #FFBA61;
@@ -821,8 +821,9 @@ header .overlay {
 }
 .socials a:hover, .socials a:focus {
   color: #FFBA61;
-  -webkit-transform: translateY(2deg);
-          transform: translateY(2deg);
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+  text-shadow: 0.5px 0.5px wheat;
 }
 
 .contact {
