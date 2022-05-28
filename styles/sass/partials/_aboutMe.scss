@@ -35,7 +35,7 @@
         padding: 15px 0;
     }
     
-    i {
+    .arrows {
         transition: 0.3s;
         
         &:hover,
@@ -44,6 +44,7 @@
             text-shadow: 1px 1px 4px #FFBA61, -1px -1px 4px #FFBA61;
         }
     }
+    
 
     .skills {
         background-color: #0c341e;
