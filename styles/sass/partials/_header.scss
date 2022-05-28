@@ -4,9 +4,15 @@ header {
     background-size: cover;
     padding-bottom: 50px;
     height: 100vh;
-
+    // display: flex;
+    // justify-content: center;
+    // flex-direction: column;
+    position: relative;
+    
+    
     .overlay {
-        height: 100%;
+        position: absolute;
+        height: 100vh;
         width: 100%;
         background: rgba(5, 28, 3, 0.4);
         top: 0;
@@ -22,6 +28,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding-bottom: 20px;
+    height: 100vh;
 }
 
 
@@ -29,29 +36,39 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    align-content: space-between;
     justify-content: center;
     color: wheat;
     width: 65%;
+    margin: 0;
 
     h1 {
         font-size: 7.5rem;
         letter-spacing: 2px;
         line-height: 0.9;
         font-weight: 700;
-        margin: 50px 0;
+        // margin: 50px 0;
+        // margin-bottom: 20px;
     }
 
     h2 {
         padding: 0;
+        // margin: 50px 0;
+        // margin-bottom: 20px;
+        margin: 30px 0;
+
     }
 }
 
 
 .portrait {
-    height: fit-content;
-    max-width: 33%;
+    // height: fit-content;
+    max-width: 40%;
     object-fit: cover;
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
+    display: block;
+    padding: 0 10px;
+
     
     img {
         border: 11px solid wheat;
@@ -59,3 +76,6 @@ header {
     }
 }
 
+.header-text a {
+    margin: 0;
+}

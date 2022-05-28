@@ -28,14 +28,14 @@ form {
 
 
 h2 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     font-weight: 700;
     padding: 20px;
 }
 
 
 .project-overview h2,
-.about-me h2, 
+.about-me-h2, 
 .contact-h2 {
     color: #235a37;
     text-shadow: 3px 3px 3px #DDA15E;
@@ -46,7 +46,7 @@ h2 {
 
     &::after {
         content: "";
-        height: 10px;
+        height: 8px;
         background-color: coral;
         display: inline-block;
         opacity: 1;
@@ -63,8 +63,8 @@ h2 {
 
 
 .about-me h2::after {
-    width: 300px;
-    left: 43%;
+    width: 250px;
+    left: 25%;
 }
 
 
@@ -134,6 +134,7 @@ nav ul {
         text-decoration: none;
         color: wheat;
         font-weight: 400;
+        transition: 0.3s;
 
         &:hover,
         &:focus {
@@ -156,6 +157,7 @@ nav ul {
     padding: 10px 25px;
     border-radius: 5px;
     margin: 50px 0;
+    transition: 0.3s;
 
     &:hover,
     &:focus {
