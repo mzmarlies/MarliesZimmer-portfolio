@@ -11,6 +11,10 @@
 
 
 .project-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
     padding: 50px;
     margin: 100px 0;
     border: 10px solid #53713F;
