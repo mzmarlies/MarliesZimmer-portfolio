@@ -1,4 +1,7 @@
 @media (max-width: 1275px) {
+    .about-me {
+        height: auto;
+    }
 
     .project-content {
         height: auto;
@@ -179,7 +182,7 @@
 
 
     .project-overview h2,
-    .about-me h2,
+    .about-me-h2,
     .contact-h2 {
         &::after {
             left: 35%;
@@ -203,7 +206,7 @@
     }
     
     
-    .about-me h2::after {
+    .about-me-h2::after {
         width: 300px;
     }
     
@@ -423,7 +426,7 @@
 
 
     .project-overview h2,
-    .about-me h2,
+    .about-me-h2,
     .contact-h2 {
         padding-bottom: 8px;
         border-bottom: 7px solid coral;
@@ -610,7 +613,7 @@
 
 
     .project-overview h2,
-    .about-me h2,
+    .about-me-h2,
     .contact-h2 {
         border-bottom: 6px solid coral;
     }
