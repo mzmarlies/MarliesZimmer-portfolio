@@ -38,19 +38,9 @@
         &:hover,
         &:focus {
             color: #FFBA61;
-            // transform: translateY(2deg);
             transform: translateY(2px);
             text-shadow: 0.5px 0.5px wheat;
             
         }
     }
 }
-
-// i {
-
-//     &:hover,
-//     &:focus {
-//         transform: translateY(2px);
-//         text-shadow: 1px 1px 4px #FFBA61, -1px -1px 4px #FFBA61;
-//     }
-// }
