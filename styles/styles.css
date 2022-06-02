@@ -326,7 +326,7 @@ p {
 
 .wrapper {
   max-width: 1440px;
-  width: 85%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -737,6 +737,7 @@ header .overlay {
 .about-me .arrows {
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  padding-bottom: 10px;
 }
 .about-me .arrows:hover, .about-me .arrows:focus {
   -webkit-transform: translateY(2px);
@@ -1045,7 +1046,7 @@ footer a {
   font-size: 1.5rem;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  margin-left: -25px;
+  margin-left: 10px;
   text-shadow: 0.5px 0.5px black;
 }
 
@@ -1416,7 +1417,7 @@ footer a {
 }
 @media (max-width: 540px) {
   .project-overview .thumbnails {
-    padding-left: 20px;
+    padding-left: 110px;
   }
 
   .project-content {
@@ -1486,7 +1487,11 @@ footer a {
     font-size: 3rem;
   }
 }
-@media (max-width: 440px) {
+@media (max-width: 445px) {
+  .fa-plus {
+    margin-left: 0;
+  }
+
   .project-content h3 {
     font-size: 1.9rem;
   }
