@@ -549,13 +549,13 @@ header .overlay {
 .project-overview .box .back p {
   font-size: 1.2rem;
   margin: 0;
-  padding: 8px 0;
+  padding: 8px;
 }
 .project-overview .box .back p:last-of-type {
   font-size: 0.9rem;
 }
 .project-overview .box .back button {
-  margin: 0;
+  margin: 5px 0;
   font-size: 0.9rem;
   padding: 5px 8px;
 }
@@ -599,7 +599,7 @@ header .overlay {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100vh;
-  padding: 50px;
+  padding: 30px;
   margin: 100px 0;
   border: 10px solid #53713F;
   background-color: #0c341e;
@@ -629,9 +629,9 @@ header .overlay {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -769,7 +769,7 @@ header .overlay {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0;
+  margin: 10px 0;
   padding: 0;
 }
 .about-me .skills .toolkit-icons li {
@@ -939,7 +939,7 @@ footer a {
 
 .slider {
   position: relative;
-  width: 600px;
+  width: 550px;
   margin: 0 auto;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1104,6 +1104,11 @@ footer a {
   left: 0;
 }
 
+@media (max-width: 1375px) {
+  .project-content {
+    height: auto;
+  }
+}
 @media (max-width: 1275px) {
   .about-me {
     height: auto;
@@ -1212,6 +1217,7 @@ footer a {
   }
 
   .project-overview h2 {
+    width: 70%;
     margin: 0 auto;
   }
 
@@ -1270,6 +1276,12 @@ footer a {
     height: 200px;
     width: 200px;
     margin-bottom: 40px;
+  }
+  .project-overview .box .back p {
+    font-size: 1rem;
+  }
+  .project-overview .box .back p:last-of-type {
+    font-size: 0.8rem;
   }
 
   .project-content .links {

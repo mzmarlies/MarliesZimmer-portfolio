@@ -1,3 +1,14 @@
+@media (max-width: 1375px) {
+    .project-content {
+        height: auto;
+    }
+
+    // .project-highlight {
+    //     justify-content: space-between;
+    // }
+}
+
+
 @media (max-width: 1275px) {
     .about-me {
         height: auto;
@@ -120,7 +131,7 @@
     
     
     .project-overview h2 {
-        // width: 70%;
+        width: 70%;
         margin: 0 auto;
     }
 
@@ -201,6 +212,17 @@
                 height: 200px;
                 width: 200px;
                 margin-bottom: 40px;
+            }
+        }
+
+        .box {
+            .back {
+                p {
+                    font-size: 1rem;
+                }
+                & p:last-of-type {
+                    font-size: 0.8rem;
+                }
             }
         }
     }
