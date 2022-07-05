@@ -61,17 +61,6 @@
 
 
 
-@media (max-width: 1020px) {
-    .project-overview {
-        .box {
-            height: 250px;
-            width: 250px;
-        }
-    }
-}
-
-
-
 
 @media (max-width: 980px) {
     nav ul {
@@ -131,32 +120,8 @@
     
     
     .project-overview h2 {
-        width: 70%;
+        // width: 70%;
         margin: 0 auto;
-    }
-
-
-    .project-overview {
-        .box {
-            top: 160px;
-            height: 225px;
-            width: 225px;
-
-            .back {
-                p {
-                    font-size: 1.2rem;
-                }
-
-                & p:last-of-type {
-                    font-size: 0.9rem;
-                }
-
-                button {
-                    font-size: 0.9rem;
-                    padding: 5px 8px;
-                }
-            }
-        }
     }
 
 
@@ -415,12 +380,6 @@
 
 
 @media (max-width: 540px) {
-    .project-overview {
-        .thumbnails {
-            padding-left : 110px;
-        }
-    }
-
 
     .project-content {
         padding: 20px 10px 50px 10px;

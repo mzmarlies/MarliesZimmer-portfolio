@@ -87,25 +87,46 @@ const slider1 = createImageSlider([
 ]);
 
 const slider2 = createImageSlider([
+    './assets/horoscope-1.png',
+    './assets/horoscope-2.png',
+    './assets/horoscope-3.png',
+    './assets/horoscope-4.png',
+    './assets/horoscope-5.png',
+    './assets/horoscope-6.png'
+])
+
+const slider3 = createImageSlider([
     './assets/DD-1.png',
     './assets/DD-2.png',
     './assets/DD-3.png',
     './assets/DD-4.png'
 ]);
 
-const slider3 = createImageSlider([
+const slider4 = createImageSlider([
     './assets/memory-test-1.png',
     './assets/memory-test-2.png',
     './assets/memory-test-3.png'
 ]);
 
 
+const slider5 = createImageSlider([
+    './assets/fof-1.png',
+    './assets/fof-2.png',
+    './assets/fof-3.png',
+    './assets/fof-4.png'
+]);
+
+
 // append slider to page
 document.querySelector('#uts-javascript-here').appendChild(slider1);
 
-document.querySelector('#dd-javascript-here').appendChild(slider2);
+document.querySelector('#horoscope-js-here').appendChild(slider2);
 
-document.querySelector('#pg-javascript-here').appendChild(slider3);
+document.querySelector('#dd-javascript-here').appendChild(slider3);
+
+document.querySelector('#mg-javascript-here').appendChild(slider4);
+
+document.querySelector('#fof-javascript-here').appendChild(slider5);
 
 
 const app = {};
